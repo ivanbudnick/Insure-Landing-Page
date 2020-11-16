@@ -1,3 +1,143 @@
-p {
-    color: blue;
+@import "variables";
+
+// <!-- -------------------PRIMARY COLORS -->
+
+// - Dark Violet: hsl(256, 26%, 20%)
+// - Grayish Blue: hsl(216, 30%, 68%)
+
+// // <!-- -------------------NEUTRAL COLORS -->
+
+// - Very Dark Violet: hsl(270, 9%, 17%)
+// - Dark Grayish Violet: hsl(273, 4%, 51%)
+// - Very Light Gray: hsl(0, 0%, 98%)
+
+// font-family: 'DM Serif Display', serif; TITLES
+
+// font-family: 'Karla', sans-serif; BODY
+
+// <!-- -------------------BODY -->
+body {
 }
+.container-fluid {
+}
+.inner-box {
+  text-align: center;
+  font-family: $body-font;
+  font-size: 16px;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+}
+// <!-- -------------------HEADER -->
+.header {
+  margin: 2rem 2rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  &__logo {
+    img {
+    }
+  }
+  &__menu {
+    img {
+    }
+  }
+}
+// <!-- -------------------MAIN-IMAGE -->
+.main-image {
+  img {
+  }
+}
+// <!-- -------------------MAIN-IMAGE -->
+.humanizing {
+  background-color: hsl(256, 47%, 25%);
+  color: white;
+  width: 100%;
+  &__text {
+    .title {
+      font-family: $heading-font;
+      font-size: 40px;
+    }
+    .paragraph {
+    }
+  }
+  &__plans {
+    button {
+    }
+  }
+}
+// <!-- -------------------TEXT -->
+.text {
+  &__title {
+    font-family: $heading-font;
+    font-size: 40px;
+  }
+  .snappy {
+    &__image {
+    }
+    &__text {
+      .title {
+        font-family: $heading-font;
+        font-size: 25px;
+      }
+      .paragraph {
+      }
+    }
+  }
+  .affordable {
+    &__image {
+    }
+    &__text {
+      .title {
+        font-family: $heading-font;
+        font-size: 25px;
+      }
+      .paragraph {
+      }
+    }
+  }
+  .people {
+    &__image {
+    }
+    &__text {
+      .title {
+        font-family: $heading-font;
+        font-size: 25px;
+      }
+      .paragraph {
+      }
+    }
+  }
+}
+// <!-- -------------------FIND-OUT -->
+.find-out {
+  background-color: hsl(256, 47%, 25%);
+  color: white;
+  &__text {
+    .title {
+      font-family: $heading-font;
+      font-size: 40px;
+    }
+  }
+  &__button {
+    button {
+    }
+  }
+}
+// <!-- -------------------FOOTER -->
+.footer {
+    width: 100%;
+  .logos {
+    &__logo {
+    }
+    &__social-media {
+    }
+  }
+  .title {color: hsl(0, 0%, 98%);
+  }
+  .subtitle {
+  }
+}
+
