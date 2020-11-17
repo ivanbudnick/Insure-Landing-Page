@@ -1,5 +1,5 @@
 @import "variables";
-@import "media-querys";
+
 
 // <!-- -------------------PRIMARY COLORS -->
 
@@ -17,10 +17,10 @@
 // font-family: 'Karla', sans-serif; BODY
 
 // <!-- -------------------BODY -->
-body {
-}
-.container-fluid {
-}
+body {}
+
+.container-fluid {}
+
 .inner-box {
   text-align: center;
   font-family: $body-font;
@@ -31,114 +31,172 @@ p {
   width: 80%;
   margin: auto;
 }
+
 // <!-- -------------------HEADER -->
 .header {
   margin: 2rem 2rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
   width: 90%;
+
   &__logo {
-    img {
-    }
+    img {}
   }
+
   &__menu {
-    img {
-    }
+    img {}
   }
 }
+
 // <!-- -------------------MAIN-IMAGE -->
 .main-image {
+  width: 100%;
+
   img {
+    width: 100%;
+  }
+
+  .desktop-img {
+display: none;
   }
 }
-// <!-- -------------------MAIN-IMAGE -->
+
+// <!-- -------------------HUMANIZING -->
 .humanizing {
-  background-color: hsl(256, 47%, 25%);
+  background-color: hsl(256, 58%, 17%);
   color: white;
   width: 100%;
+  padding: 7rem 0;
+
   &__text {
     .title {
       font-family: $heading-font;
       font-size: 40px;
     }
-    .paragraph {
-    }
+
+    .paragraph {}
   }
+
   &__plans {
     button {
+      margin-top: 2rem;
+      border: solid 2px white;
+      background-color: transparent;
+      color: white;
+      padding: 0.5rem 3rem;
     }
   }
 }
+
 // <!-- -------------------TEXT -->
 .text {
+  margin: 7rem 0;
+
+  .hr {
+    width: 50%;
+    height: 2px;
+    background-color: hsl(0, 0%, 85%);
+    margin: -1rem auto 2rem auto;
+  }
+
   &__title {
     font-family: $heading-font;
     font-size: 40px;
   }
-  .snappy {
-    &__image {
-    }
-    &__text {
-      .title {
-        font-family: $heading-font;
-        font-size: 25px;
-      }
-      .paragraph {
-      }
-    }
+
+  .title {
+    font-family: $heading-font;
+    font-size: 25px;
+
   }
-  .affordable {
-    &__image {
-    }
-    &__text {
-      .title {
-        font-family: $heading-font;
-        font-size: 25px;
-      }
-      .paragraph {
-      }
-    }
-  }
-  .people {
-    &__image {
-    }
-    &__text {
-      .title {
-        font-family: $heading-font;
-        font-size: 25px;
-      }
-      .paragraph {
-      }
-    }
+
+  img {
+    width: 5rem;
+    margin: 2rem;
   }
 }
+
 // <!-- -------------------FIND-OUT -->
 .find-out {
-  background-color: hsl(256, 47%, 25%);
+  background-color: hsl(256, 58%, 17%);
   color: white;
+  padding: 5rem 0;
+  margin-bottom: 7rem;
+
   &__text {
     .title {
       font-family: $heading-font;
       font-size: 40px;
     }
   }
+
   &__button {
     button {
+      border: solid 2px white;
+      background-color: transparent;
+      color: white;
+      padding: 0.5rem 3rem;
+      margin-top: 2rem;
     }
-  }
-}
-// <!-- -------------------FOOTER -->
-.footer {
-    width: 100%;
-  .logos {
-    &__logo {
-    }
-    &__social-media {
-    }
-  }
-  .title {color: hsl(0, 0%, 98%);
-  }
-  .subtitle {
   }
 }
 
+// <!-- -------------------FOOTER -->
+.footer {
+  width: 100%;
+
+  .logos {
+    background-color: rgb(146, 148, 99);
+    padding: 4rem;
+
+    &__logo {
+      margin: 2rem;
+    }
+
+    &__social-media {
+      margin: 2rem auto;
+      width: 100%;
+      display: flex;
+
+      img {
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  hr {
+    width: 90%;
+
+  }
+
+  .title {
+    color: hsl(0, 0%, 68%);
+    margin: 3rem auto;
+  }
+
+  .subtitle {}
+}
+
+p {
+  font-weight: 700;
+}
+
+// <!-- -------------------MEDIA QUERYS -- >
+@media only screen and (min-width: 769px) {
+
+  .inner-box {
+    background-color: blue;
+    ;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop-img {
+display: inline-block;
+
+  }
+}
+
+@media only screen and (min-width: 992px) {}
