@@ -35,24 +35,44 @@
 
 <body>
   <div class="container-fluid">
-    <div class="outer-box ">
+    <div class="outer-box">
       <div class="inner-box row px-0 justify-content-center">
         <!-- -------------------HEADER -->
-        <div class="header ">
-          <div class="header__logo">
-            <img src="images\logo.svg" alt="" />
+        <div class="header" id="header">
+          <div class="nav-bar">
+            <div class="header__logo">
+              <img src="images\logo.svg" alt="" />
+            </div>
+            <div class="header__menu" id="menu-button">
+              <img src="images\icon-hamburger.svg" alt="" />
+            </div>
           </div>
-          <div class="header__menu">
-            <img src="images\icon-hamburger.svg" alt="" />
+          <div class="menu" id="menu">
+            <button id="button-how-we-work">HOW WE WORK</button>
+            <button>BLOG</button>
+            <button>ACCOUNT</button>
+            <button>VIEW PLANS</button>
+            <img src="images\bg-pattern-mobile-nav.svg" alt="" />
           </div>
         </div>
+        <!-- -------------------MENU -->
+
         <!-- -------------------MAIN-IMAGE -->
-        <div class="main-image px-0">
-          <img class= "img-responsive mobile" src="images\image-intro-mobile.jpg" alt="" />
-          <img class="img-responsive desktop-img" src="images\image-intro-desktop.jpg" alt="">
+
+        <div class="main-image px-0" id="main-image">
+          <img
+            class="img-responsive mobile"
+            src="images\image-intro-mobile.jpg"
+            alt=""
+          />
         </div>
         <!-- -------------------HUMANIZING -->
-        <div class="humanizing">
+        <div class="humanizing" id="humanizing">
+          <img
+            class="background"
+            src="images\bg-pattern-intro-left-mobile.svg"
+            alt=""
+          />
           <div class="humanizing__text">
             <p class="title">Humanizing your insurance.</p>
             <p class="paragraph">
@@ -64,14 +84,19 @@
           <div class="humanizing__plans">
             <button>VIEW PLANS</button>
           </div>
+          <img
+            class="img-responsive desktop-img"
+            src="images\image-intro-desktop.jpg"
+            alt=""
+          />
         </div>
         <!-- -------------------TEXT -->
-        <div class="text">
-          <div class="hr"></div>
-          <div class="text__title">
+        <div class="text row px-0 col-10" id="text">
+          <div class="hr col-12"></div>
+          <div class="text__title col-12">
             <p>We're different</p>
           </div>
-          <div class="snappy">
+          <div class="snappy col-md-4">
             <div class="snappy__image">
               <img src="images\icon-snappy-process.svg" alt="" />
             </div>
@@ -83,7 +108,7 @@
               </p>
             </div>
           </div>
-          <div class="affordable">
+          <div class="affordable col-md-4">
             <div class="affordable__image">
               <img src="images\icon-affordable-prices.svg" alt="" />
             </div>
@@ -96,7 +121,7 @@
             </div>
           </div>
 
-          <div class="people">
+          <div class="people col-md-4">
             <div class="people__image">
               <img src="images\icon-people-first.svg" alt="" />
             </div>
@@ -110,7 +135,8 @@
           </div>
         </div>
         <!-- -------------------FIND-OUT -->
-        <div class="find-out col-11">
+        <div class="find-out col-11" id="find-out">
+          <img src="images\bg-pattern-how-we-work-mobile.svg" alt="" />
           <div class="find-out__text">
             <p class="title">Find out more about how we work</p>
           </div>
@@ -119,8 +145,8 @@
           </div>
         </div>
         <!-- -------------------FOOTER -->
-        <div class="footer">
-          <div class="logos">
+        <div class="footer col-12 row justify-content-center px-0" id="footer">
+          <div class="logos col-12">
             <div class="logos__logo">
               <img src="images\logo.svg" alt="" />
             </div>
@@ -131,26 +157,28 @@
               <img src="images\icon-instagram.svg" alt="" />
             </div>
           </div>
-          <hr>
-          <div class="our-company">
-            <p class="title">OUR COMPANY</p>
-            <p class="subtitle">HOW WE WORK</p>
-            <p class="subtitle">WHY INSURE?</p>
-            <p class="subtitle">CHECK PRICE</p>
-            <p class="subtitle">REVIEWS</p>
-          </div>
-          <div class="help-me">
-            <p class="title">HELP ME</p>
-            <p class="subtitle">FAQ</p>
-            <p class="subtitle">TERMS OF USE</p>
-            <p class="subtitle">PRIVACY POLICY</p>
-            <p class="subtitle">COOKIES</p>
-          </div>
-          <div class="contact">
-            <p class="title">CONTACT</p>
-            <p class="subtitle">SALES</p>
-            <p class="subtitle">SUPPORT</p>
-            <p class="subtitle">LIVE CHAT</p>
+          <hr />
+          <div class="footer__footer col-md-9 row justify-content-center px-0">
+            <div class="our-company col-md-4">
+              <p class="title">OUR COMPANY</p>
+              <p class="subtitle">HOW WE WORK</p>
+              <p class="subtitle">WHY INSURE?</p>
+              <p class="subtitle">CHECK PRICE</p>
+              <p class="subtitle">REVIEWS</p>
+            </div>
+            <div class="help-me col-md-4">
+              <p class="title">HELP ME</p>
+              <p class="subtitle">FAQ</p>
+              <p class="subtitle">TERMS OF USE</p>
+              <p class="subtitle">PRIVACY POLICY</p>
+              <p class="subtitle">COOKIES</p>
+            </div>
+            <div class="contact col-md-4">
+              <p class="title">CONTACT</p>
+              <p class="subtitle">SALES</p>
+              <p class="subtitle">SUPPORT</p>
+              <p class="subtitle">LIVE CHAT</p>
+            </div>
           </div>
         </div>
       </div>
