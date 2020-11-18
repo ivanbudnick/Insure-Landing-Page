@@ -16,6 +16,10 @@
 // font-family: 'Karla', sans-serif; BODY
 
 // <!-- -------------------BODY -->
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 }
 
@@ -36,20 +40,22 @@ p {
 
 // <!-- -------------------HEADER -->
 .header {
-  margin: 2rem 2rem 1rem 2rem;
-
-  width: 90%;
+  margin: 0 0 1rem 0;
+  width: 100%;
   background-color: white;
   .nav-bar {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: white;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
     z-index: 2;
     &__logo {
       img {
       }
     }
-
     &__menu {
       img {
         cursor: pointer;
@@ -58,13 +64,11 @@ p {
   }
   .menu {
     z-index: 1;
-    display: none;
+    // display: none;
     position: absolute;
-    top: 30px;
-    // top: 80px;
-    left: 0;
+    top: -1000px;
+    left: 0px;
     background-color: hsl(256, 26%, 20%);
-    padding-bottom: 15rem;
     border-bottom: solid 3px white;
     width: 100%;
     button {
@@ -85,6 +89,10 @@ p {
       right: 0;
       width: 100%;
       height: 35%;
+    }
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 }
@@ -182,6 +190,9 @@ p {
     .title {
       font-family: $heading-font;
       font-size: 40px;
+      position: relative;
+      z-index:2;
+
     }
   }
 
@@ -192,6 +203,8 @@ p {
       color: white;
       padding: 0.5rem 3rem;
       margin-top: 2rem;
+      position: relative;
+      z-index: 1;
     }
   }
   img {
@@ -200,6 +213,7 @@ p {
     width: auto;
     top: 0;
     right: 1px;
+    z-index: 0;
   }
 }
 
